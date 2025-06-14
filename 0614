@@ -2,87 +2,67 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>A1113350_郭宜嘉_PowerBI個人專案</title>
+  <title>Power BI 個人專案展示</title>
   <style>
     body {
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
       background-color: #f5f5f5;
-      font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 6px 24px rgba(100, 100, 100, 0.09);
-      border: 2px solid #e0e0e0;
-      padding: 32px 28px 28px 28px;
-      position: relative;
-    }
-    .title {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 18px;
-      letter-spacing: 1px;
-      text-align: center;
-      color: #444;
-    }
-    .color-swatch {
       display: flex;
       justify-content: center;
-      gap: 18px;
-      margin-bottom: 24px;
+      align-items: flex-start;
+      padding: 40px;
     }
-    .swatch {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: 2.5px solid #bbb;
-      box-shadow: 0 2px 8px rgba(80,80,80,0.07);
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      width: 650px;
     }
-    .swatch.gray1 { background: #e0e0e0; }
-    .swatch.gray2 { background: #bdbdbd; }
-    .swatch.gray3 { background: #757575; }
-    .swatch.gray4 { background: #424242; }
-    .swatch.gray5 { background: #f5f5f5; border: 2.5px solid #d6d6d6;}
-    .iframe-wrap {
-      border: 2.5px solid #bdbdbd;
-      border-radius: 18px;
+
+    .card-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 12px;
+    }
+
+    .card-description {
+      font-size: 1em;
+      color: #555555;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .iframe-container {
+      border: 1px solid #ccc;
+      border-radius: 12px;
       overflow: hidden;
-      background: #f5f5f5;
-      box-shadow: 0 4px 18px rgba(180,180,180,0.08);
-      margin-bottom: 18px;
     }
-    .caption {
-      text-align: center;
-      font-size: 1.1rem;
-      color: #757575;
-      margin-bottom: 0;
-      letter-spacing: 0.5px;
+
+    iframe {
+      width: 100%;
+      height: 375px;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="title">A1113350_郭宜嘉 PowerBI 個人專案</div>
-    <div class="color-swatch">
-      <div class="swatch gray1"></div>
-      <div class="swatch gray2"></div>
-      <div class="swatch gray3"></div>
-      <div class="swatch gray4"></div>
-      <div class="swatch gray5"></div>
+
+  <div class="card">
+    <div class="card-title">A1113350 郭宜嘉 — Power BI 個人專案</div>
+    <div class="card-description">
+      本作品為《資料設計與思考》課程中所完成的 Power BI 個人專案，結合開放資料視覺化與互動設計，透過雙鑽石設計思考流程，展現如何從資料中提煉洞察與智慧，並以圖表形式清晰傳達重點。
     </div>
-    <div class="iframe-wrap">
-      <iframe 
-        title="A1113350_郭宜嘉_PowerBI個人專案" 
-        width="100%" height="373.5" 
+    <div class="iframe-container">
+      <iframe title="A1113350_郭宜嘉_PowerBI個人專案" 
         src="https://app.powerbi.com/view?r=eyJrIjoiZmQ4NWZmNzItMzczNi00MDdmLTkxMDYtZTQ1NDA2Y2RjMTIwIiwidCI6IjVhNDg0OTUzLTc3ZWYtNDJlYy05MGNmLTJmNGUxMDM3ZmZjNyIsImMiOjEwfQ%3D%3D" 
-        frameborder="0" allowfullscreen="true">
+        allowFullScreen="true">
       </iframe>
     </div>
-    <div class="caption">資料視覺化儀表板嵌入展示</div>
   </div>
+
 </body>
 </html>
